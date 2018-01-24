@@ -1,0 +1,49 @@
+set rnu
+set nu
+let mapleader = " "
+
+set ignorecase
+set smartcase
+
+noremap <c-c> "*y
+noremap <c-v> "*p
+
+nnoremap gr .
+
+nnoremap <leader><leader>z :action Back<CR>
+
+nnoremap <leader>s ^
+nnoremap <leader>d <c-d>
+nnoremap <leader>u <c-u>
+
+nnoremap <leader><leader>l yiwoconsole.log("<esc>pa = <esc>A;<esc>ba + <esc>p
+nnoremap <leader>enter yiwoconsole.log("entered <esc>pA;<esc>
+nnoremap <leader>json iJSON.stringify(<esc>ea, null, 4)<esc>
+
+nnoremap <leader>h :action PreviousTab<CR>
+nnoremap <leader>l :action NextTab<CR>
+
+nnoremap <leader>ev :tabedit ~/.ideavimrc<CR>
+nnoremap <leader>rv :source ~/.ideavimrc<CR>
+
+nnoremap <leader><leader>r :action Run<CR>
+nnoremap <leader><leader>d :action Debug<CR>
+nnoremap <leader><leader>s i<c-v><F2><ESC>
+
+nnoremap <leader><leader>c :action CommentByLineComment<CR>
+vnoremap <leader><leader>c :action CommentByLineComment<CR>
+nnoremap <leader>br :action ToggleLineBreakpoint<CR>
+nnoremap <leader><leader>b :action GotoDeclaration<CR>
+"nnoremap <leader><leader>o :action StepOver<CR>
+"nnoremap <leader><leader>i :action StepInto<CR>
+
+nnoremap <leader><leader>j :action CloseContent<CR>
+nnoremap <leader><leader>u :action FindUsages<CR>
+
+"Window Group stuff
+
+nnoremap <leader>w <c-w>
+
+
+
+
